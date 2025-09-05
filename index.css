@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Clock";
+  src: url("./fonts/clock.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    max-width: 60%;
+    padding: 13px 30px 30px 30px;
+    color: white;
+    border: 3px solid red;
+    border-radius: 10px;
+    margin: 100px
+}
+
+.buttons {
+  display: inline-flex;   /* shrinks to content width */
+  gap: 0.4rem;            /* spacing */
+  justify-content: center;
+  background-color: darkblue;
+  color: darkblue;
+}
+
+.buttons button {
+    background: transparent;
+    border: 1px solid beige;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    font-weight: bolder;
+}
+
+#score-home, #score-guest {
+    font-family: "Clock";                /* matches the @font-face above */
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin: 10px 0 10px 0;
+}
+
+.scores-home, .scores-guest {
+    background-color: black;
+    padding: 10px 0 10px 0;
+    border-radius: 25px;
+    border: 4px solid black;
+    transition: border-color 120ms ease; 
+}
+
+.lead {  border-color: #22c55e; } /* green */
+.trail { border-color: #ef4444; } /* red   */
+.tie {   border-color: #eab308; } /* yellow */
