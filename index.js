@@ -29,9 +29,19 @@ function updateBorders() {
 
 
 function plus1Home()  { homeCount.textContent  = Number(homeCount.textContent)  + 1; updateBorders(); }
-function plus2Home()  { homeCount.textContent  = Number(homeCount.textContent)  + 2; updateBorders();  }
-function plus3Home()  { homeCount.textContent  = Number(homeCount.textContent)  + 3; updateBorders();  }
+function plus2Home()  { homeCount.textContent  = Number(homeCount.textContent)  + 2; updateBorders(); }
+function plus3Home()  { homeCount.textContent  = Number(homeCount.textContent)  + 3; updateBorders(); }
 
-function plus1Guest() { guestCount.textContent = Number(guestCount.textContent) + 1; updateBorders();  }
-function plus2Guest() { guestCount.textContent = Number(guestCount.textContent) + 2; updateBorders();  }
-function plus3Guest() { guestCount.textContent = Number(guestCount.textContent) + 3; updateBorders();  }
+function plus1Guest() { guestCount.textContent = Number(guestCount.textContent) + 1; updateBorders(); }
+function plus2Guest() { guestCount.textContent = Number(guestCount.textContent) + 2; updateBorders(); }
+function plus3Guest() { guestCount.textContent = Number(guestCount.textContent) + 3; updateBorders(); }
+
+// Expose functions for inline onclick handlers when using ES modules
+Object.assign(window, {
+  plus1Home,
+  plus2Home,
+  plus3Home,
+  plus1Guest,
+  plus2Guest,
+  plus3Guest,
+});
