@@ -31,6 +31,7 @@ body {
   justify-content: center;
   background-color: darkblue;
   color: darkblue;
+  padding-top: 15px;
 }
 
 .buttons button {
