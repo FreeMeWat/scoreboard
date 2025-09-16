@@ -47,7 +47,7 @@ body {
 
 #score-home, #score-guest {
     font-family: "Clock";                /* matches the @font-face above */
-    font-size: 64px;
+    font-size: 66px;
     line-height: 1;
     letter-spacing: 0.02em;
     margin: 10px 0 10px 0;
